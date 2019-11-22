@@ -1,17 +1,17 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Container } from 'semantic-ui-react';
 
 const MainSec = () => (
-  <div class="main">
+  <Container className="main">
     <Grid>
       <Grid.Row>
         <Grid.Column width={9}>
-          <h1>Turn Up the Bass</h1>
-          <p>From the newest releases to classic albums, we have the best music for you to enjoy.</p>
+          <h1>SafeGuarage</h1>
+          <p>A SafeGuard for Your Garage.</p>
         </Grid.Column>
       </Grid.Row>
     </Grid>
-  </div>
+  </Container>
 )
 
 export default MainSec;

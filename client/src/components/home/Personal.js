@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Grid, Header, Image } from 'semantic-ui-react';
+import You from '../../img/you.png';
 
 const Personal = () => (
   <div className="supporting-1">
       <Container>
-        <Grid columns={2}>
+        <Grid columns={2} stackable>
           <Grid.Row>
             <Grid.Column> 
-              <Image src="img/you.svg" width="450" height="300" /> 
+              <Image src={You}  height="300" /> 
             </Grid.Column>
             <Grid.Column>
               <Header as="h2">

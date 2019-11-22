@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Grid, Header, Image } from 'semantic-ui-react';
+import ConnectImg from '../../img/connect.png';
 
 const Connect = () => (
   <div className="supporting-3">
     <Container>
-      <Grid columns={2}>
+      <Grid columns={2} stackable>
         <Grid.Row>
           <Grid.Column width={8}> 
-            <Image src="img/connect.svg" width="450" height="300" /> 
+            <Image src={ConnectImg} height="300" /> 
           </Grid.Column>
           <Grid.Column width={8}>
             <Header as="h2">Connect with Others</Header>

@@ -5,15 +5,14 @@ import Personal from './Personal';
 import Anywhere from './Anywhere';
 import Connect from './Connect';
 import TryNow from './TryNow';
-import { Container } from 'semantic-ui-react';
 
 const Home = () => (
   <>
     <div className="jumbotron">
-      <Container>
-        <TopHeader />
+      <TopHeader /> 
+      <div className='mainSec'>
         <MainSec />
-      </Container>
+      </div>
     </div>
     <Personal />
     <Anywhere />

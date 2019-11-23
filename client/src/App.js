@@ -9,9 +9,11 @@ import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Dash from './components/dash/Dash';
 import Contact from './components/contact/Contact';
+import Navbar from './components/shared/Navbar';
 
 const App = () => (
   <>
+    <Navbar />
     <FetchUser>
       <Switch>
         <Route exact path="/" component={Home} />

@@ -1,7 +1,8 @@
 import React from 'react'
 import { AuthConsumer } from "../../providers/AuthProvider";
-import { Menu } from 'semantic-ui-react'
 import { Link, withRouter } from 'react-router-dom'
+import { Menu, Grid, Image, Container } from 'semantic-ui-react';
+import Logo from '../../img/logowhite.png';
 
 class Navbar extends React.Component {
   
@@ -13,45 +14,46 @@ class Navbar extends React.Component {
         <Menu.Menu position='right'>
           <Menu.Item
             name='logout'
+            className='headerLink'
             onClick={ () => handleLogout(this.props.history) }
           />
         </Menu.Menu>
       )
     } else {
       return (
-        <Menu.Menu position='right'>
-          <Link to='/login'>
-            <Menu.Item
-              id='login'
-              name='login'
-              active={location.pathname === '/login'}
-            />
-          </Link>
-          <Link to='/register'>
-            <Menu.Item
-              id='register'
-              name='register'
-              active={location.pathname === '/register'}
-            />
-          </Link>
-        </Menu.Menu>
+        <Link className="btn btn-default" to='/login'>
+          Login
+        </Link>
       )
     }
   }
   
   render() {
     return (
-      <div>
-        <Menu pointing secondary>
-          <Link to='/'>
-            <Menu.Item
-              name='home'
-              id='home'
-              active={this.props.location.pathname === '/'}
-            />
-          </Link>
-            { this.rightNavItems() }
-        </Menu>
+      <div style={{ background: 'black' }}>
+        <Container className="header">
+          <Grid stackable>
+            <Grid.Row>
+              <Grid.Column width={4}>
+                <Link to='/'>
+                  <Image className="logo" src={Logo} width="106" height="75" />
+                </Link>
+              </Grid.Column>
+              <Grid.Column width={12}>
+                <ul className="pull-right">
+                  <li>
+                    <Link to='/' className='headerLink'>
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    { this.rightNavItems() }
+                  </li>
+                </ul>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
       </div>
     )
   }

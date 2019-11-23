@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Header, Grid, Form, Button, Segment, Container } from 'semantic-ui-react';
-import { Redirect } from 'react-router-dom';
 
 class Contact extends Component {
   state = { email: '', message: '' }
@@ -19,8 +18,14 @@ class Contact extends Component {
     const { email, message } = this.state;
     return(
       <Container>
-        <Header as='h1'>Contact Us</Header>
-        <Header as='h4'>Shoot Us a Message or Drop By!</Header>
+        <br />
+        <br />
+        <center>
+          <Header as='h1'>Contact Us</Header>
+          <Header as='h4'>Shoot Us a Message or Drop By!</Header>
+        </center>
+        <br />
+        <br />
         <Grid stackable columns={2}>
           <Grid.Row>
             <Grid.Column>

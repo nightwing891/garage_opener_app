@@ -8,12 +8,16 @@ const TopHeader = () => (
     <Grid stackable>
       <Grid.Row>
         <Grid.Column width={4}>
-          <Image className="logo" src={Logo} width="106" height="75" />
+          <Link to='/'>
+            <Image className="logo" src={Logo} width="106" height="75" />
+          </Link>
         </Grid.Column>
         <Grid.Column width={12}>
           <ul className="pull-right">
             <li>
-              <a href="#" className='headerLink'>Features</a>
+              <Link to='/' className='headerLink'>
+                Features
+              </Link>
             </li>
             <li>
               <Link className="btn btn-default" to='/login'>

@@ -6,13 +6,16 @@ import { AuthProvider } from "./providers/AuthProvider";
 import 'semantic-ui-css/semantic.min.css';
 import { initMiddleware, } from 'devise-axios';
 import './index.css';
+import ScrollToTop from './ScrollToTop';
 
 initMiddleware();
 
 ReactDOM.render(
   <AuthProvider>
     <BrowserRouter>
-      <App />
+      <ScrollToTop>
+        <App /> 
+      </ScrollToTop>
     </BrowserRouter>
   </AuthProvider>,
   document.getElementById('root')

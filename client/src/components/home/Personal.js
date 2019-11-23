@@ -8,7 +8,7 @@ const Personal = () => (
         <Grid columns={2} stackable>
           <Grid.Row>
             <Grid.Column> 
-              <Image src={You}  height="300" /> 
+              <Image src={You}  height="250" /> 
             </Grid.Column>
             <Grid.Column>
               <Header as="h2">

@@ -15,6 +15,10 @@ body {
   padding: 0;
 }
 
+.pull-right {
+  float: right !important;
+}
+
 .header, label {
   color: white !important;   
 }
@@ -28,6 +32,14 @@ body {
 
 .header {
   color: #fff;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+.ui.header:first-child {
+  margin-top: .8em;
 }
 
 .header ul {
@@ -58,17 +70,17 @@ h2 {
   margin-bottom: 40px;
 }
 
-.jumbotron .btn {
-  color: #fff;
-  background: #ff003d;;
+.jumbotron .btn, .btn {
+  color: #fff !important;
+  background: #ff003d !important;
   border-radius: 2px;
   padding: 8px 20px;
 }
 
-.jumbotron .btn:hover {
-  color: #ff003d;
-  border: 1px solid #ff003d;
-  background-color: #fff;
+.jumbotron .btn:hover, .btn:hover {
+  color: #ff003d !important;
+  border: 1px solid #ff003d !important;
+  background-color: #fff !important;
 }
 
 form {
@@ -102,7 +114,7 @@ form {
 }
 
 .mainSec {
-  background: url('./img/PhotobyKariSheaonUnsplash.jpeg') no-repeat center center;
+  background: url('./img/PhotobyKariSheaonUnsplash.png') no-repeat center center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,9 +179,9 @@ form {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: 
-  #fff;
+  color: #fff;
   text-align: center;
+  box-shadow: inset 0px 0px 277px 3px black;
   height: 400px;
 }
 /* Feature */

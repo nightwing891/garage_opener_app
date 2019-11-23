@@ -25,7 +25,11 @@ const Footer = () => (
           <Grid.Column width={4}>
             <ul>
               <h3>About</h3>
-              <li><a href="#">Team</a></li>
+              <li>
+                <Link to='/team'>
+                  Team
+                </Link>
+              </li>
             </ul>
           </Grid.Column>
           <Grid.Column width={4}>

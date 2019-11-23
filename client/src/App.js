@@ -10,6 +10,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import Dash from './components/dash/Dash';
 import Contact from './components/contact/Contact';
 import Navbar from './components/shared/Navbar';
+import Team from './components/team/Team';
 
 const App = () => (
   <>
@@ -20,6 +21,7 @@ const App = () => (
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/team" component={Team} />
         <ProtectedRoute exact path="/dash" component={Dash} />
         <Route component={NoMatch} />
       </Switch>

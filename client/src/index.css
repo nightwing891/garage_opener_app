@@ -27,7 +27,14 @@ body {
   max-width: 970px;
 }
 
+.team, .team h4 {
+  text-align: center !important;
+  color: #ff003d !important;
+}
 
+.center {
+  text-align: center !important;
+}
 /* Header */
 
 .header {

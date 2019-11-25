@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Image, Header } from 'semantic-ui-react';
 import Henry from '../../img/henry.jpg';
-import User from '../../img/user.png'
+import Khoi from '../../img/khoi.jpg'
 import Rohan from '../../img/rohan.jpg'
 
 const Team = () => (
@@ -26,7 +26,7 @@ const Team = () => (
         </Grid.Column>
         <Grid.Column>
           <div className='team'>
-            <Image src={User} circular size='medium' centered />
+            <Image src={Khoi} circular size='medium' centered />
             <Header as='h2'>Khoi Nguyen</Header>
             <Header as='h4'>CEO</Header>
             <br />

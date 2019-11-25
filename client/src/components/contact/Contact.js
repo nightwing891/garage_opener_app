@@ -57,6 +57,8 @@ class Contact extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        <br />
+        <br />
       </Container>
     )
   }
